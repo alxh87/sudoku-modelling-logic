@@ -123,14 +123,14 @@ class Sudoku
 
 
 	def solve!
-
-		until @endflag==true do
+		i=0
+		until @endflag==true | i=20 do
 		fill_blanks
 	  	row_possibles  	
 	  	col_possibles
 	  	block_possibles
 	  	square_possibles
-	  	
+	  	i+=1
 	  end
 	end
 end
